@@ -1,0 +1,74 @@
+﻿[
+  {
+    "company": "Cipher Systems",
+    "position": "Senior Software Engineer",
+    "startdate": "July 2018",
+    "enddate": null,
+    "iscurrent": true,
+    "responsibilities": [
+      "Architect and build features for an AWS-based business intelligence platform in C#, .Net 4.5, MVC5, KnockoutJs, jQuery, Lucene.net and SQL",
+      "Provide guidance and coding standards for other developers",
+      "Work in Kanban-style agile approach"
+    ],
+    "projects": [
+      "Designing a service to merge and map millions of company records using RabbitMQ for multi-thread processing",
+      "Creating responsive UIs displaying business data from SQL and SOLR",
+      "Improving website load times and performance by optimizing SQL, C# and JS",
+      "Creating an AWS data pipeline to S3 and Redshift to store millions of records tracking companies’ trends"
+    ],
+    "image": "cipher"
+  },
+  {
+    "company": "Pearson Online and Blended Learning",
+    "position": "Software Engineering Lead",
+    "startdate": "July 2015",
+    "enddate": "July 2018",
+    "iscurrent": false,
+    "responsibilities": [
+      "Managed a 7-to-11-member agile team focused on driving school leads and enrollments",
+      "Developed customer-facing features using .NET, C#, SQL, HTML, CSS, AngularJS and KnockoutJS",
+      "Worked closely with the business to prioritize, estimate and complete work",
+      "Provided guidance and performance reviews for software engineers and testers"
+    ],
+    "projects": [
+      "Migrating 30+ sites from Sitefinity to DNN CMS",
+      "Managing 30+ custom-built user controls and page themes in DNN, recreating in AngularJS and KnockoutJS",
+      "Redoing all forms, resulting in increased lead generation",
+      "Adding live chat feature and multiple language support to sites",
+      "Creating various administrative tools with secured API routes",
+      "Integrating leads with Salesforce and Jive messaging platform"
+    ],
+    "image": "pearson"
+  },
+  {
+    "company": "The Cabezon Group",
+    "position": "Web Applications Developer",
+    "startdate": "July 2010",
+    "enddate": "May 2013",
+    "iscurrent": false,
+    "responsibilities": [
+      "Designed, developed and upgraded database-driven web applications for FEMA and the National Institutes of Health",
+      "Managed SQL databases and database backup plans",
+      "Wrote technical documents explaining how to use applications"
+    ],
+    "projects": [
+      "Dynamic system used to generate unique event registration websites for government conferences",
+      "Identity and access management for internal users and federal employees",
+      "FEMA Assistance to Firefighter Grants scoring UIs"
+    ],
+    "image": "cabezon"
+  },
+  {
+    "company": "The (Easton) Star Democrat",
+    "position": "News Editor",
+    "startdate": "October 2005",
+    "enddate": "July 2010",
+    "iscurrent": false,
+    "responsibilities": [
+      "Prepared a daily story budget; assigned and edited stories for a staff of eight",
+      "Reported on local and state government",
+      "Updated and published the newspaper's website"
+    ],
+    "image": "stardem"
+  }
+]

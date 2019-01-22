@@ -1,0 +1,16 @@
+﻿[
+  {
+    "school": "Medill School of Journalism, Northwestern University",
+    "startdate": "September 2004",
+    "enddate": "August 2005",
+    "degree": "Master of Science in Journalism",
+    "image": "medill"
+  },
+  {
+    "school": "Denison University",
+    "startdate": "August 1999",
+    "enddate": "May 2003",
+    "degree": "Bachelor of Arts in Philosophy and Classics",
+    "image": "denison"
+  }
+]

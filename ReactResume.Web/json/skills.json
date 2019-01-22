@@ -1,0 +1,8 @@
+﻿{
+  "Languages": "C#, JavaScript (including jQuery, AngularJS, KnockoutJS, React, Typescript, Node), HTML5, CSS3, SQL",
+  "Database": "SQL, PostgreSQL, Redshift",
+  "Tools": "Visual Studio (Core, MVC and WebForms), Microsoft SQL Server, IIS, AWS, Azure, Jira, Jenkins, Entity Framework, Microsoft Enterprise Library",
+  "Source Control": "TFS, Git, Bitbucket, SourceTree",
+  "Search": "Lucene, Solr",
+  "CMS": "DNN, Sitefinity, WordPress"
+}
