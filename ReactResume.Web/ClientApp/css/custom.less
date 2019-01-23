@@ -1,4 +1,12 @@
-﻿.flex-row {
+﻿.resume-header {
+    background-color:darkblue;
+    
+    & a { 
+        color:white;
+    }
+}
+
+.flex-row {
     display: flex;
     flex-wrap: wrap;
 }
@@ -11,7 +19,7 @@
 .educ-card {
     border: 1px #bbb solid;
     border-radius: 5px;
-    padding: 0 1em .5em 1em;
+    padding: 0 2em .5em 1em;
     box-shadow: 0 3px 6px;
     margin-bottom: 1em;
     height: 100%;
@@ -31,17 +39,16 @@
 .lds-ring {
     display: inline-block;
     position: relative;
-    width: 64px;
-    height: 64px;
+    width: 100%;
 }
 
 .lds-ring div {
     box-sizing: border-box;
     display: block;
     position: absolute;
-    width: 51px;
-    height: 51px;
-    margin: 6px;
+    width: 10em;
+    height: 10em;
+    margin: 5em;
     border: 6px solid #000;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;

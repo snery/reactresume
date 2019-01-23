@@ -18,9 +18,9 @@ namespace ReactResume.Web.Api
         }
 
         [HttpGet("")]
-        public IEnumerable<EducationDto> GetEducation()
+        public JsonResult GetEducation()
         {
-            return _educationService.GetData();
+            return Json(_educationService.GetData());
         }
     }
 }

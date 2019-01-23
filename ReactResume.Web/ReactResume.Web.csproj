@@ -22,7 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="json\jobs.json" />
     <Content Remove="wwwroot\dist\images\cabezon.png" />
     <Content Remove="wwwroot\dist\images\cipher.png" />
     <Content Remove="wwwroot\dist\images\denison.png" />
@@ -41,7 +40,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="json\jobs.json" />
     <None Include="wwwroot\dist\images\cabezon.png" />
     <None Include="wwwroot\dist\images\cipher.png" />
     <None Include="wwwroot\dist\images\denison.png" />

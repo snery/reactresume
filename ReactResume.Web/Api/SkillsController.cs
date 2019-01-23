@@ -18,9 +18,9 @@ namespace ReactResume.Web.Api
         }
 
         [HttpGet("")]
-        public IEnumerable<GenericDto> GetSkills()
+        public JsonResult GetSkills()
         {
-            return _skillsService.GetData();
+            return Json(_skillsService.GetData());
         }
     }
 }

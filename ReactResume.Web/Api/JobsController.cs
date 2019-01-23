@@ -19,9 +19,9 @@ namespace ReactResume.Web.Api
         }
 
         [HttpGet("")]
-        public IEnumerable<JobDto> GetJobs()
+        public JsonResult GetJobs()
         {
-            return _jobService.GetData();
+            return Json(_jobService.GetData());
         }
     }
 }

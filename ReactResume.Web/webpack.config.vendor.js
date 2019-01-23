@@ -4,7 +4,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = (env) => {
     const extractCSS = new ExtractTextPlugin('vendor.css');
-    const extractCustomCSS = new ExtractTextPlugin('custom.min.css');
     const isDevBuild = !(env && env.prod);
     return [{
         stats: { modules: false },
@@ -28,7 +27,6 @@ module.exports = (env) => {
         },
         plugins: [
             extractCSS,
-            extractCustomCss,
             new webpack.ProvidePlugin({ $: 'jquery', jQuery: 'jquery' }), // Maps these identifiers to the jQuery package (because Bootstrap expects it to be a global variable)
             new webpack.DllPlugin({
                 path: path.join(__dirname, 'wwwroot', 'dist', '[name]-manifest.json'),

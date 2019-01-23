@@ -14,7 +14,7 @@
       "Designing a service to merge and map millions of company records using RabbitMQ for multi-thread processing",
       "Creating responsive UIs displaying business data from SQL and SOLR",
       "Improving website load times and performance by optimizing SQL, C# and JS",
-      "Creating an AWS data pipeline to S3 and Redshift to store millions of records tracking companies’ trends"
+      "Creating an AWS data pipeline to S3 and Redshift to store millions of records tracking companies trends"
     ],
     "image": "cipher"
   },
@@ -67,7 +67,7 @@
     "responsibilities": [
       "Prepared a daily story budget; assigned and edited stories for a staff of eight",
       "Reported on local and state government",
-      "Updated and published the newspaper's website"
+      "Updated and published the newspaper website"
     ],
     "image": "stardem"
   }
