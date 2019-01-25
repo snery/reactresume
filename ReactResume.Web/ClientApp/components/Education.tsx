@@ -51,14 +51,18 @@ export class Education extends React.Component<RouteComponentProps<{}>, Educatio
             </div>
             <h1 className="page-header">Skills</h1>
             <div className="row flex-row">
-                <ul>
-                {skills.map((skill) =>
-                    <li key={skill.key}>
-                            <b key={skill.key}>{skill.key + ": "}</b>
-                            <span key={skill.value}>{skill.value}</span><br/>
-                    </li>
-                    )}
-                </ul>
+                <div className="col-xs-12 col-md-6 card-col">
+                    <div className="educ-card">
+                        <ul>
+                        {skills.map((skill) =>
+                            <li key={skill.key}>
+                                    <b key={skill.key}>{skill.key + ": "}</b>
+                                    <span key={skill.value}>{skill.value}</span><br/>
+                            </li>
+                            )}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>;
     }

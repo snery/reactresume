@@ -4,5 +4,6 @@
   "Tools": "Visual Studio (Core, MVC and WebForms), Microsoft SQL Server, IIS, AWS, Azure, Jira, Jenkins, Entity Framework, Microsoft Enterprise Library",
   "Source Control": "TFS, Git, Bitbucket, SourceTree",
   "Search": "Lucene, Solr",
-  "CMS": "DNN, Sitefinity, WordPress"
+  "CMS": "DNN, Sitefinity, WordPress",
+  "Testing": "Microsoft Test Manager, NUnit, Selenium"
 }

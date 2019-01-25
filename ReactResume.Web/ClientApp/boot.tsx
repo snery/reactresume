@@ -7,6 +7,7 @@ import { AppContainer } from 'react-hot-loader';
 import { BrowserRouter } from 'react-router-dom';
 import * as RoutesModule from './routes';
 let routes = RoutesModule.routes;
+import './js/custom.js';
 
 function renderApp() {
     // This code starts up the React app when it runs in a browser. It sets up the routing

@@ -31,6 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\components\Code.tsx" />
     <None Remove="ClientApp\components\Education.tsx" />
     <None Remove="ClientApp\components\Jobs.tsx" />
   </ItemGroup>
@@ -49,6 +50,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\components\Code.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Education.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Jobs.tsx" />
   </ItemGroup>

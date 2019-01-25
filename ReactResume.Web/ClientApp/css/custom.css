@@ -1,4 +1,7 @@
-﻿.resume-header {
+﻿body {
+  background-color: #f5f5f5;
+}
+.resume-header {
   background-color: darkblue;
 }
 .resume-header a {
@@ -12,17 +15,30 @@
   margin-bottom: 2em;
 }
 .job-card,
-.educ-card {
+.educ-card,
+.code-card {
   border: 1px #bbb solid;
   border-radius: 5px;
   padding: 0 2em 0.5em 1em;
   box-shadow: 0 3px 6px;
   margin-bottom: 1em;
   height: 100%;
+  background-color: white;
 }
 .job-card:hover,
-.educ-card:hover {
+.educ-card:hover,
+.code-card:hover {
   box-shadow: 0 6px 12px;
+}
+.educ-card ul {
+  margin-top: 2em;
+  padding-left: 1em;
+}
+.educ-card ul li {
+  list-style-type: none;
+}
+.code-card {
+  padding-top: 1em;
 }
 .logo {
   max-height: 5em;
@@ -62,5 +78,68 @@
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.hamburger {
+  text-align: right;
+}
+.hamburger .more-info {
+  display: inline-block;
+  margin-top: 1.75em;
+  font-family: fantasy;
+  color: dodgerblue;
+}
+.hamburger button.hamburger-button {
+  float: right;
+  width: 4em;
+  background-color: transparent;
+  border: none;
+  position: relative;
+  line-height: 0.5em;
+  margin-top: 1em;
+  padding: 0.5em 0.25em 0.75em 0.25em;
+}
+.hamburger span.icon-bar {
+  background-color: black;
+  height: 3px;
+  width: 3em;
+  border-radius: 1px;
+  display: inline-block;
+  line-height: 0px;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+.hamburger-menu {
+  float: right;
+  clear: both;
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  top: 5em;
+  background-color: white;
+  border: 1px solid #337ab7;
+  border-bottom: none;
+}
+.hamburger-menu ul,
+.hamburger-menu li {
+  list-style-type: none;
+}
+.hamburger-menu ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.hamburger-menu li {
+  padding: 1em;
+  border-bottom: 1px solid #337ab7;
+  background-color: black;
+}
+.hamburger-menu li a {
+  color: white;
+}
+@media (max-width: 768px) {
+  .job-card h3,
+  .educ-card h3 {
+    clear: both;
   }
 }
