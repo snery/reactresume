@@ -20,45 +20,51 @@ export class Jobs extends React.Component<RouteComponentProps<{}>, JobsState>{
 
     public render() {
         let content = this.state.loading
-            ? <div className="lds-ring"><div></div><div></div><div></div><div></div></div>
+            ? <div className="loadingWrapper">
+                <div className="loader"></div>
+            </div>
             : Jobs.renderJobsContent(this.state.jobs);
 
         return <div>
-            { content }
+            {content}
         </div>;
     }
 
     private static renderJobsContent(jobs: JobData[]) {
         return <div>
-            <h1 className="page-header">Job Experience</h1>
-            <div className="row flex-row">            
-            {jobs.map((job) =>                
-                <div key={job.company} className="col-xs-12 col-md-6 card-col">
-                    <div className="job-card">
-                        <img className="logo" src={__webpack_public_path__ + "./images/" + job.image + ".png"}></img>
-                        <h3>{job.company}</h3>
-                        <h5><b>{job.position}</b>, {job.startdate} - {job.iscurrent === false ? job.enddate : "present"}</h5>
-                        {job.responsibilities !== null && job.responsibilities.length !== 0 ? (
-                            <div>
-                                <label>Responsibilities include:</label>
-                                <ul id={job.company + "respUl"}>
-                                        {job.responsibilities.map((resp) =>
-                                            <li key={resp}>{resp}</li>
-                                    )}
-                                </ul>
-                            </div>) : null}
-                        {job.projects !== null && job.projects.length !== 0 ? (
-                            <div>
-                                <label>Projects include:</label>
-                                <ul id={job.company + "projUl"}>
-                                        {job.projects.map((proj) =>
-                                            <li key={proj}>{proj}</li>
-                                    )}
-                                </ul>
-                            </div>) : null}
-                    </div>
-                </div>                
-            )}
+            <div className="col-xs-0 col-md-1"></div>
+            <div className="col-xs-12 col-md-10">
+                <h1 className="page-header">Job Experience</h1>
+                <div className="row flex-row">
+                    {jobs.map((job) =>
+                        <div key={job.company} className="col-xs-12 col-md-6 card-col">
+                            <div className="job-card">
+                                <img className="logo" src={__webpack_public_path__ + "./images/" + job.image + ".png"} alt={ job.company + " logo"}></img>
+                                <h3>{job.company}</h3>
+                                <h5><b>{job.position}</b>, {job.startdate} - {job.iscurrent === false ? job.enddate : "present"}</h5>
+                                {job.responsibilities !== null && job.responsibilities.length !== 0 ? (
+                                    <div>
+                                        <label>Responsibilities include:</label>
+                                        <ul id={job.company + "respUl"}>
+                                            {job.responsibilities.map((resp) =>
+                                                <li key={resp}>{resp}</li>
+                                            )}
+                                        </ul>
+                                    </div>) : null}
+                                {job.projects !== null && job.projects.length !== 0 ? (
+                                    <div>
+                                        <label>Projects include:</label>
+                                        <ul id={job.company + "projUl"}>
+                                            {job.projects.map((proj) =>
+                                                <li key={proj}>{proj}</li>
+                                            )}
+                                        </ul>
+                                    </div>) : null}
+                            </div>
+                        </div>
+                    )}
+                </div>
+                <div className="col-xs-0 col-md-1"></div>
             </div>
         </div>;
     }
