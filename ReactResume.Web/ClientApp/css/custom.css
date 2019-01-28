@@ -138,3 +138,12 @@
     padding: 0;
   }
 }
+.errorContainer {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10em;
+}
+.errorContainer i.glyphicon.glyphicon-alert {
+  color: red;
+  font-size: 1.25em;
+}

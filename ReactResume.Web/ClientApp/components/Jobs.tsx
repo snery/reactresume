@@ -1,33 +1,48 @@
 ﻿import * as React from 'react';
 import { RouteComponentProps } from 'react-router';
 import 'isomorphic-fetch';
+import { ErrorMessage } from './ErrorMessage';
+import { LoadingSpinner } from './LoadingSpinner';
 
 interface JobsState {
     loading: boolean;
     jobs: JobData[];
+    hasError: boolean;
 }
 
 export class Jobs extends React.Component<RouteComponentProps<{}>, JobsState>{
     constructor() {
         super();
-        this.state = { jobs: [], loading: true };
+        this.state = { jobs: [], loading: true, hasError: false };
 
-        fetch('api/jobs').then(response => response.json() as Promise<JobData[]>)
-            .then(data => {
-                this.setState({ jobs: data, loading: false })
-            });
+        this.fetchJobData();
     }
 
     public render() {
         let content = this.state.loading
-            ? <div className="loadingWrapper">
-                <div className="loader"></div>
-            </div>
-            : Jobs.renderJobsContent(this.state.jobs);
+            ? <LoadingSpinner/>
+            : this.state.hasError ? <ErrorMessage />
+            :Jobs.renderJobsContent(this.state.jobs);
 
         return <div>
             {content}
         </div>;
+    }
+
+    private fetchJobData() {
+        fetch('api/jobs').then(function (response) {
+            if (response.ok) {
+                return response;
+            }
+            throw new Error("Unable to fetch data");
+        })
+            .then(response => response.json() as Promise<JobData[]>)
+            .then(data => {
+                this.setState({ jobs: data, loading: false, hasError: false })
+            })
+            .catch(error => {
+                this.setState({ loading: false, hasError: true })
+            });
     }
 
     private static renderJobsContent(jobs: JobData[]) {
@@ -67,7 +82,7 @@ export class Jobs extends React.Component<RouteComponentProps<{}>, JobsState>{
                 <div className="col-xs-0 col-md-1"></div>
             </div>
         </div>;
-    }
+    }    
 }
 
 interface JobData {

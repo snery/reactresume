@@ -33,7 +33,9 @@
   <ItemGroup>
     <None Remove="ClientApp\components\Code.tsx" />
     <None Remove="ClientApp\components\Education.tsx" />
+    <None Remove="ClientApp\components\ErrorMessage.tsx" />
     <None Remove="ClientApp\components\Jobs.tsx" />
+    <None Remove="ClientApp\components\LoadingSpinner.tsx" />
   </ItemGroup>
 
   <ItemGroup>
@@ -52,7 +54,9 @@
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\components\Code.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Education.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\ErrorMessage.tsx" />
     <TypeScriptCompile Include="ClientApp\components\Jobs.tsx" />
+    <TypeScriptCompile Include="ClientApp\components\LoadingSpinner.tsx" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">
